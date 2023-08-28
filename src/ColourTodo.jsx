@@ -1,5 +1,6 @@
 import React from "react";
 import Todo from "./Todo";
+import Todo2 from "./Todo2";
 
 function ColourTodo(props){
     //state
@@ -9,9 +10,9 @@ function ColourTodo(props){
         var x = document.getElementById('in').value
         setTodos([...todos,x])  
     }
-    function donetodo(){
-        setTodos(className='')
-    }
+   function abc(){
+    
+   }
    
     //template
     return (
@@ -23,7 +24,7 @@ function ColourTodo(props){
             <ul>
                 {
                     todos.map((todo)=>{
-                        return <Todo todo={todo} d={donetodo}></Todo>
+                        return <Todo2 todo={todo} d={abc}></Todo2>
                     })
                 }
             </ul>

@@ -18,6 +18,7 @@ function Todolist2(props){
     //template
     return (
         <div className="mybox">
+            {console.log('hello')}
             <h1>Todolist</h1>
             <input type="text" id="in"/>
             <button onClick={addtodo}>Add List</button>
@@ -37,4 +38,4 @@ function Todolist2(props){
         </div>
     )
 }
-export default Todolist2;
+export default React.memo(Todolist2);

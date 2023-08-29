@@ -1,6 +1,7 @@
 import React from "react";
 import Todo from "./Todo";
 
+
 function Todolist3(props){
     //state
     var [todos,setTodos]=React.useState(['mango','apple','cat','banana','orange'])
@@ -10,12 +11,12 @@ function Todolist3(props){
         setTodos([...todos,x])
        
     }
-    function delTodo(i){
+    var delTodo=React.useCallback(function(i){
         var temp = [...todos]
         temp.splice(i,1)
         setTodos([...temp])
         //alert(i)
-    }
+    },[])
     //template
     return (
         <div className="mybox">
@@ -26,6 +27,7 @@ function Todolist3(props){
             <ul>
                 {
                     todos.map((todo,i)=>{
+                      
                         return <Todo todo={todo} d={delTodo} i={i}></Todo>
                     })
                 }

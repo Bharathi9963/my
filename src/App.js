@@ -5,13 +5,15 @@ import Todolist from './Todolist';
 import Todolist2 from './Todolist2';
 import Todolist3 from './Todolist3';
 import ColourTodo from './ColourTodo';
-import Practice from './PracticeExamples';
+import Careousal from './Careousal';
+import Performance from './Performace';
+import Colour from './Colour2';
 
 function App() {
   return (
     <div>
      
-      <Counter s={23} i={10}></Counter>
+      {/* {<Counter s={23} i={10}></Counter> }
       <Counter s={100} i={5}></Counter>
       <div className='mybox'>
         <h1>Indian Teams</h1>
@@ -23,10 +25,19 @@ function App() {
       <Todolist2></Todolist2>
       <Todolist3></Todolist3>
       <ColourTodo></ColourTodo>
-      </div>
-      <Practice></Practice>
+      </div> 
+       <Performance></Performance>
+     
+       */}
+      <Colour></Colour>
+
+
+
+
+      
       
     </div>
+   
   );
 }
 

@@ -1,6 +1,7 @@
 import React from "react";
 import Todolist from "./Todolist";
 function Todo(props){
+    console.log('hi')
     return(
         <div>
            <li className="mybox">
@@ -12,4 +13,4 @@ function Todo(props){
         </div>
     )
 }
-export default Todo;
+export default React.memo(Todo);

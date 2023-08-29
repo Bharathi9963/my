@@ -5,6 +5,7 @@ import Todolist from './Todolist';
 import Todolist2 from './Todolist2';
 import Todolist3 from './Todolist3';
 import ColourTodo from './ColourTodo';
+import Practice from './PracticeExamples';
 
 function App() {
   return (
@@ -23,7 +24,7 @@ function App() {
       <Todolist3></Todolist3>
       <ColourTodo></ColourTodo>
       </div>
-
+      <Practice></Practice>
       
     </div>
   );

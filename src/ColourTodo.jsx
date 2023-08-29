@@ -1,30 +1,49 @@
 import React from "react";
-import Todo from "./Todo";
-import Todo2 from "./Todo2";
 
 function ColourTodo(props){
     //state
-    var [todos,setTodos]=React.useState(['mango','apple','cat','banana','orange'])
+    var [todos,setTodos]=React.useState([
+       {
+         title:'mango',
+         status:false
+       },
+       {
+        title:'Apple',
+        status:true
+      },
+      {
+        title:'Pineapple',
+        status:false
+      },
+      {
+        title:'watermelon',
+        status:true
+      },
+
+    ])
     //logic
-    function addtodo(){
-        var x = document.getElementById('in').value
-        setTodos([...todos,x])  
-    }
-   function abc(){
     
+   function done(ind){
+  var temp=[...todos]
+  temp[ind].status===true?(temp[ind].status=false):(temp[ind].status=true)
+  
+  setTodos([...temp])
+
+
    }
    
     //template
     return (
         <div className="mybox">
             <h1>Todolist</h1>
-            <input type="text" id="in"/>
-            <button onClick={addtodo}>Add List</button>
-            
+          
             <ul>
                 {
-                    todos.map((todo)=>{
-                        return <Todo2 todo={todo} d={abc}></Todo2>
+                    todos.map((todo,index)=>{
+                        return <li style={todo.status===true?{backgroundColor:'green'}:{backgroundColor:'red'}}>{todo.title}
+                        <button onClick={()=>{done(index)}}>Done</button>
+                        
+                        </li>
                     })
                 }
             </ul>

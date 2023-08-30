@@ -20,6 +20,7 @@ code {
   background-color: red;
   margin: 10px;
   padding: 10px;
+
 }
 .coltodo2{
   background-color: aqua;
@@ -48,4 +49,8 @@ code {
   padding-bottom: 4px;
   background-color: green;
   margin-left: 10px;
+}
+.myul{
+  
+  list-style: none;
 }

@@ -8,6 +8,8 @@ import ColourTodo from './ColourTodo';
 import Careousal from './Careousal';
 import Performance from './Performace';
 import Colour from './Colour2';
+import Usd from './Useeffect';
+import axios from 'axios';
 
 function App() {
   return (
@@ -28,8 +30,9 @@ function App() {
       </div> 
        <Performance></Performance>
      
-       */}
-      <Colour></Colour>
+      
+      <Colour></Colour> */}
+      <Usd></Usd>
 
 
 

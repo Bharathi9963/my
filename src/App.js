@@ -17,6 +17,7 @@ import React from 'react';
 
 import Vacation from './Vacation'
 import Accordion from './Accordion';
+import Reviews from './Reviews';
 
 
 
@@ -56,6 +57,7 @@ function App() {
       </MyContext.Provider>*/}
      <Vacation></Vacation>
      <Accordion></Accordion>
+     <Reviews></Reviews>
 
      
     

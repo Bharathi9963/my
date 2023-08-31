@@ -10,6 +10,7 @@ import Performance from './Performace';
 import Colour from './Colour2';
 import Usd from './Useeffect';
 import axios from 'axios';
+import Project from './Project';
 
 function App() {
   return (
@@ -31,8 +32,9 @@ function App() {
        <Performance></Performance>
      
       
-      <Colour></Colour> */}
-      <Usd></Usd>
+      <Colour></Colour> 
+      <Usd></Usd>*/}
+      <Project></Project>
 
 
 

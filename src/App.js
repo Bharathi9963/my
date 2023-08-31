@@ -1,28 +1,26 @@
-import logo from './logo.svg';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
 import './App.css';
-import Counter from './Counter';
-import Todolist from './Todolist';
-import Todolist2 from './Todolist2';
-import Todolist3 from './Todolist3';
-import ColourTodo from './ColourTodo';
-import Careousal from './Careousal';
-import Performance from './Performace';
-import Colour from './Colour2';
-import Usd from './Useeffect';
-import axios from 'axios';
-import Project from './Project';
-import Mem from './UseMemo';
-import React, { createContext } from 'react';
-import First from './First';
-import { Context } from 'react';
-var MyContext=createContext('')
+// import Counter from './Counter';
+// import Todolist from './Todolist';
+// import Todolist2 from './Todolist2';
+// import Todolist3 from './Todolist3';
+// import ColourTodo from './ColourTodo';
+// import Careousal from './Careousal';
+// import Performance from './Performace';
+// import Colour from './Colour2';
+// import Usd from './Useeffect';
+// import axios from 'axios';
+// import Project from './Project';
+// import Mem from './UseMemo';
+import React from 'react';
+
+import Vacation from './Vacation'
+
 
 
 function App() {
-  var [y,sety]=React.useState(1)
-  function agh(){
-    sety(y+1)
-  }
+  
   return (
     <div>
      
@@ -45,7 +43,7 @@ function App() {
       <Colour></Colour> 
       <Usd></Usd>
       <Project></Project>
-      <Mem></Mem>*/}
+      <Mem></Mem>
       
      <MyContext.Provider value={x}>
       <div className='mybox'>
@@ -54,7 +52,8 @@ function App() {
         <button onClick={()=>{agh()}}>Click me</button>
         <First y={y}></First>
       </div>
-      </MyContext.Provider>
+      </MyContext.Provider>*/}
+     <Vacation></Vacation>
      
     
 

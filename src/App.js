@@ -11,8 +11,18 @@ import Colour from './Colour2';
 import Usd from './Useeffect';
 import axios from 'axios';
 import Project from './Project';
+import Mem from './UseMemo';
+import React, { createContext } from 'react';
+import First from './First';
+import { Context } from 'react';
+var MyContext=createContext('')
+
 
 function App() {
+  var [y,sety]=React.useState(1)
+  function agh(){
+    sety(y+1)
+  }
   return (
     <div>
      
@@ -33,8 +43,20 @@ function App() {
      
       
       <Colour></Colour> 
-      <Usd></Usd>*/}
+      <Usd></Usd>
       <Project></Project>
+      <Mem></Mem>*/}
+      
+     <MyContext.Provider value={x}>
+      <div className='mybox'>
+        <h1>Welcome to Edupoly</h1>
+        <div>Count:{y}</div>
+        <button onClick={()=>{agh()}}>Click me</button>
+        <First y={y}></First>
+      </div>
+      </MyContext.Provider>
+     
+    
 
 
 

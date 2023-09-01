@@ -3,7 +3,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min';
 import './App.css';
 // import Counter from './Counter';
 // import Todolist from './Todolist';
-// import Todolist2 from './Todolist2';
+ import Todolist2 from './Todolist2';
 // import Todolist3 from './Todolist3';
 // import ColourTodo from './ColourTodo';
 // import Careousal from './Careousal';
@@ -18,11 +18,20 @@ import React from 'react';
 import Vacation from './Vacation'
 import Accordion from './Accordion';
 import Reviews from './Reviews';
+import Cart from './Cart';
+import axioss from 'axios';
+import Shop from './Cart';
+import First from './First';
+import Mycontext from './Context';
 
 
 
-function App() {
-  
+
+ function App() {
+//   var [y,sety]=React.useState(1)
+//   function agh(){
+//     sety(y+1)
+//   }
   return (
     <div>
      
@@ -47,17 +56,26 @@ function App() {
       <Project></Project>
       <Mem></Mem>
       
-     <MyContext.Provider value={x}>
-      <div className='mybox'>
+     
+     <Vacation></Vacation>
+     <Accordion></Accordion>
+     <Reviews></Reviews>
+    
+    <Mycontext.Provider value={y}>
+    <div className='mybox'>
         <h1>Welcome to Edupoly</h1>
         <div>Count:{y}</div>
         <button onClick={()=>{agh()}}>Click me</button>
         <First y={y}></First>
       </div>
-      </MyContext.Provider>*/}
-     <Vacation></Vacation>
-     <Accordion></Accordion>
-     <Reviews></Reviews>
+    </Mycontext.Provider>
+    <Refer></Refer>
+    <Todolist2></Todolist2>*/}
+    <Shop></Shop>
+    
+     
+    
+
 
      
     

@@ -23,6 +23,7 @@ import axioss from 'axios';
 import Shop from './Cart';
 import First from './First';
 import Mycontext from './Context';
+import Dark from './Darkmode';
 
 
 
@@ -70,8 +71,9 @@ import Mycontext from './Context';
       </div>
     </Mycontext.Provider>
     <Refer></Refer>
-    <Todolist2></Todolist2>*/}
-    <Shop></Shop>
+    <Todolist2></Todolist2>
+    <Shop></Shop>*/}
+    <Dark></Dark>
     
      
     

@@ -24,6 +24,7 @@ import Shop from './Cart';
 import First from './First';
 import Mycontext from './Context';
 import Dark from './Darkmode';
+import Cocktail from './Cocktail';
 
 
 
@@ -72,8 +73,10 @@ import Dark from './Darkmode';
     </Mycontext.Provider>
     <Refer></Refer>
     <Todolist2></Todolist2>
-    <Shop></Shop>*/}
+    <Shop></Shop>
     <Dark></Dark>
+    <Cocktail></Cocktail>*/}
+     
     
      
     

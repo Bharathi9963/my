@@ -19,9 +19,20 @@ function Project(){
         temp.splice(i,1)
         setTour([...temp])
     }
+   
+   
     function readmore(ind){
+        var readmor=document.getElementById('dd')
+        if(readmor.innerHTML==='....Read more'){
+            readmor.innerHTML='....Read less'
+        }
+        else{
+            readmor.innerHTML='....Read more'
+        }
+       
        var temp=([...tour])
        temp[ind].flag =! temp[ind].flag
+      
        setTour([...temp])
     }
     return(
@@ -38,7 +49,8 @@ function Project(){
              <div class="card-body" style={{width:"auto",padding:"5px"}}>
                  <span><p class="text-start" style={{fontSize:"20px"}}><b>{place.name}</b></p><p class="text-end"><span class="badge bg-secondary">{place.price}</span></p></span>
                  <p>{place.flag?place.info:place.info.slice(0,200)}
-                 <button onClick={()=>{readmore(i)}}>Read more</button></p>
+                 <span onClick={()=>{readmore(i)}} id='dd' style={{color:'Red'}}>....Read more</span></p>
+               
                  <button onClick={()=>{notintrested(i)}} style={{borderColor:"red",color:"red"}}>Not intrested</button>
              </div>
              </div>
